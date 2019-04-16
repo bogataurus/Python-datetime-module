@@ -1,0 +1,7 @@
+# [ ] Write a program to display a list of all your birthdays from the day you were born till 2025.
+# You should also show the weekdays so you can see which of them was (or will be) on a weekend
+from datetime import datetime 
+for i in range(1965, 2026):
+    d = datetime(month = 5, year = i, day = 1)
+    formatted_string = d.strftime("%A, %d, %B, %Y")
+    print(formatted_string)
